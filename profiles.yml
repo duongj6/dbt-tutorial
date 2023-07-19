@@ -1,0 +1,15 @@
+config:
+
+  send_anonymous_usage_stats: False
+jaffle_shop: # this needs to match the profile in your dbt_project.yml file
+  target: dev
+  outputs:
+    dev:
+      dbname: postgres
+      host: localhost
+      pass: anypassword1
+      port: 5432
+      schema: dev
+      threads: 8
+      type: postgres
+      user: postgres
